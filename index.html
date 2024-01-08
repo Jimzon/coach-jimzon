@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Coach Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add your additional styles here */
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+      <div
+        class="container max-w-6xl mx-auto flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <!-- <img
+            src="./img/logo.png"
+            alt="Chess Coach Logo"
+            class="mr-2 h-8 w-8"
+          /> -->
+          <h1 class="text-2xl font-semibold">Coach Jimzon</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex space-x-4">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">About</a>
+          <a href="#" class="hover:underline">Lessons</a>
+          <a href="#" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-6 p-4">
+      <!-- Improved Hero Section -->
+      <section class="bg-navy text-white p-12 mb-6 flex items-center">
+        <!-- Image on the Left -->
+        <div class="w-1/2 pr-8">
+          <img
+            src="your-image.jpg"
+            alt="Your Image"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+
+        <!-- Text and Button on the Right -->
+        <div class="w-1/2">
+          <div class="text-center">
+            <h2 class="text-4xl font-semibold mb-4">Welcome to Chess Coach</h2>
+            <p class="text-lg mb-8">
+              Unlock your potential with personalized chess lessons and
+              strategies.
+            </p>
+            <a
+              href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Chessboard Section -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Chessboard</h2>
+        <div id="chessboard" class="border border-gray-300 p-4">
+          <!-- Chessboard will be rendered here -->
+        </div>
+      </section>
+
+      <!-- Lessons Section -->
+      <section class="mt-6">
+        <h2 class="text-2xl font-semibold mb-4">Lessons</h2>
+        <ul id="lessons-list" class="list-disc pl-6">
+          <!-- List of lessons will be rendered here -->
+        </ul>
+      </section>
+    </main>
+
+    <footer class="bg-blue-500 text-white p-4 mt-6">
+      <p>&copy; 2024 Chess Coach. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
