@@ -8,11 +8,33 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
+      /* Custom Styles for Dark Mode Feel */
+      body {
+        background-color: #1a202c; /* Dark background color */
+        color: #cbd5e0; /* Light text color */
+      }
+
+      header {
+        background-color: #2d3748; /* Dark header background color */
+      }
+
+      a {
+        color: #63b3ed; /* Link color in dark mode */
+      }
+
+      a:hover {
+        color: #4299e1; /* Hover color for links in dark mode */
+      }
+
       /* Add your additional styles here */
     </style>
   </head>
-  <body class="bg-gray-100">
+  <body>
     <header class="bg-gray-800 text-white p-4">
       <div
         class="container max-w-6xl mx-auto flex justify-between items-center"
@@ -38,52 +60,159 @@
     </header>
 
     <main class="container mx-auto mt-6 p-4">
-      <!-- Improved Hero Section -->
-      <section class="bg-navy text-white p-12 mb-6 flex items-center">
-        <!-- Image on the Left -->
-        <div class="w-1/2 pr-8">
+      <!-- Improved Hero Section with Slightly Minimized Image Width -->
+      <section
+        class="bg-gray-800 text-white container mx-auto max-w-6xl p-8 md:p-12 mb-6 flex flex-col md:flex-row items-center"
+      >
+        <!-- Text and Button on the Left (on small screens) and on Top (on larger screens) -->
+        <div class="md:w-1/2 text-center md:text-left mb-4 md:mb-0 px-4">
+          <h2 class="text-4xl font-semibold mb-4">Welcome to Chess Coach</h2>
+          <p class="text-lg mb-4">
+            Unlock your potential with personalized chess lessons and
+            strategies. Whether you're a beginner looking to learn the
+            fundamentals or an advanced player seeking strategic insights, Chess
+            Coach provides tailored guidance to help you reach your full
+            potential on the chessboard.
+          </p>
+          <p class="text-lg mb-8">
+            Our experienced coach, Jimzon, is dedicated to helping players of
+            all levels refine their skills and achieve success in their chess
+            journey. Get started today and embark on a rewarding chess learning
+            experience.
+          </p>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+            >Get Started</a
+          >
+        </div>
+        <div class="md:w-1/2 max-w-md mx-auto">
           <img
-            src="your-image.jpg"
-            alt="Your Image"
-            class="w-full h-auto rounded-lg"
+            src="./img/jimzonchess.png"
+            alt="Coach Jimzon"
+            class="w-full h-auto mx-auto rounded-lg"
           />
         </div>
-
-        <!-- Text and Button on the Right -->
-        <div class="w-1/2">
-          <div class="text-center">
-            <h2 class="text-4xl font-semibold mb-4">Welcome to Chess Coach</h2>
-            <p class="text-lg mb-8">
-              Unlock your potential with personalized chess lessons and
-              strategies.
-            </p>
-            <a
-              href="#"
-              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
-              >Get Started</a
-            >
-          </div>
-        </div>
       </section>
-      <!-- Chessboard Section -->
-      <section>
-        <h2 class="text-2xl font-semibold mb-4">Chessboard</h2>
-        <div id="chessboard" class="border border-gray-300 p-4">
-          <!-- Chessboard will be rendered here -->
-        </div>
+      <!-- Improved About Section -->
+      <section class="mb-8 max-w-6xl p-4 mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">About Coach Jimzon</h2>
+        <p class="mb-4">
+          Meet Coach Jimzon, a seasoned chess enthusiast with a profound passion
+          for the game. With over two decades of experience in the world of
+          chess, Coach Jimzon has honed his skills and developed a deep
+          understanding of the intricacies that make chess a fascinating and
+          intellectually stimulating endeavor.
+        </p>
+        <p class="mb-4">
+          Coach Jimzon is not just a teacher; he's a mentor who is committed to
+          unlocking the full potential of every chess player he guides. Whether
+          you're taking your first steps on the chessboard or you're an advanced
+          player aiming for new heights, Coach Jimzon tailors his approach to
+          suit your individual goals and learning style.
+        </p>
+        <p class="mb-4">
+          Beyond the technicalities of chess, Coach Jimzon believes in fostering
+          a love for the game and instilling strategic thinking that extends
+          beyond the board. His teaching philosophy emphasizes the development
+          of critical thinking skills, strategic planning, and a love for the
+          timeless game of chess.
+        </p>
+        <p class="mb-4">
+          Coach Jimzon's success stories include numerous students who have gone
+          on to excel in local and regional chess competitions. His dedication
+          to the growth of his students both as chess players and as individuals
+          sets him apart as a coach who goes beyond the moves on the board.
+        </p>
+        <p>
+          Embark on a journey of chess mastery with Coach Jimzon, where every
+          move is a step toward strategic brilliance and personal growth.
+        </p>
       </section>
 
       <!-- Lessons Section -->
-      <section class="mt-6">
+      <section class="mt-6 max-w-6xl p-4 mx-auto">
         <h2 class="text-2xl font-semibold mb-4">Lessons</h2>
         <ul id="lessons-list" class="list-disc pl-6">
-          <!-- List of lessons will be rendered here -->
+          <li class="mb-4">
+            <span class="font-semibold">Lesson 1:</span> Introduction to Chess
+            Basics
+            <p class="text-gray-300">
+              Learn the fundamental rules of chess, including how each piece
+              moves and the objective of the game.
+            </p>
+          </li>
+          <li class="mb-4">
+            <span class="font-semibold">Lesson 2:</span> Opening Strategies
+            <p class="text-gray-300">
+              Explore various chess openings and understand the importance of a
+              strong opening strategy.
+            </p>
+          </li>
+          <li class="mb-4">
+            <span class="font-semibold">Lesson 3:</span> Tactics and
+            Combinations
+            <p class="text-gray-300">
+              Master tactical patterns and combinations to gain an advantage
+              over your opponents.
+            </p>
+          </li>
+          <li class="mb-4">
+            <span class="font-semibold">Lesson 4:</span> Endgame Mastery
+            <p class="text-gray-300">
+              Delve into endgame principles and techniques to secure victories
+              in the later stages of the game.
+            </p>
+          </li>
+          <li class="mb-4">
+            <span class="font-semibold">Lesson 5:</span> Positional
+            Understanding
+            <p class="text-gray-300">
+              Develop a deep understanding of positional play and strategic
+              thinking to outmaneuver your opponents.
+            </p>
+          </li>
         </ul>
+      </section>
+
+      <!-- Registration Section -->
+      <section class="mt-6 max-w-6xl p-4 mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Register for Chess Lessons</h2>
+        <p class="mb-4 text-gray-300">
+          Ready to enhance your chess skills? Register for personalized lessons
+          with Coach Jimzon by clicking the button below.
+        </p>
+        <button
+          onclick="window.location.href='https://your-google-form-link-here'"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+        >
+          Register Now
+        </button>
       </section>
     </main>
 
-    <footer class="bg-blue-500 text-white p-4 mt-6">
-      <p>&copy; 2024 Chess Coach. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-4 mt-6">
+      <div class="max-w-6xl flex justify-between items-center mx-auto">
+        <div class="mb-4">
+          <p>&copy; 2024 Chess Coach. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-4">
+          <!-- Additional Links -->
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+
+          <!-- Social Media Icons from Font Awesome -->
+          <a href="#" class="hover:underline">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="hover:underline">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="hover:underline">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
